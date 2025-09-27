@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n, k, problem=0, solved=0;
+	cin>>n>>k;
+	k=240-k;
+	for(int i=1; i<=n; i++){
+		problem+=i;
+		if(problem*5<=k) solved=i;
+		else break;
+	}
+	cout<<solved;
+}
