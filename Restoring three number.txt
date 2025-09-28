@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	long long p,q,r,s;
+	cin>>p>>q>>r>>s;
+	long long sum=(p+q+r+s)/3;
+	for(int i : {p,q,r,s}){
+		if(i<sum)
+			cout<<sum-i<<' ';
+	}
+}
